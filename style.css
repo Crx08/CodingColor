@@ -1,10 +1,127 @@
-body{
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
-
+/* Corpo pagina */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2c2c44);
+    color: #ffffff;
+    min-height: 100vh;
 }
 
-error{
-    color: rgb(255,0,0);
+/* Header */
+#header {
+    background-color: #111827;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #3b82f6;
+}
+
+#saluto {
+    font-size: 1.4rem;
+    color: #93c5fd;
+}
+
+/* Titolo principale */
+#title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#title h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: #60a5fa;
+}
+
+/* Sezione input */
+#input {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #1f2933;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+#input label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e5e7eb;
+}
+
+#input input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Bottoni */
+#input button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#btnElabora {
+    background-color: #22c55e;
+    color: #000;
+}
+
+#btnElabora:hover {
+    background-color: #16a34a;
+    transform: scale(1.05);
+}
+
+#btnCancella {
+    background-color: #ef4444;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#btnCancella:hover {
+    background-color: #dc2626;
+    transform: scale(1.05);
+}
+
+/* Output */
+#output {
+    width: 400px;
+    margin: 30px auto 10px;
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#outText {
+    margin-bottom: 10px;
+    color: #facc15;
+}
+
+#outText2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Errori */
+#error {
+    width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    color: #f87171;
+    font-weight: bold;
 }
