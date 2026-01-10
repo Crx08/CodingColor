@@ -36,3 +36,21 @@ function elabora(){
             "Il numero inserito non va bene";
     }
 }
+
+function reset(){
+    // svuota input
+    document.getElementById("inNumber").value = "";
+    document.getElementById("inText").value = "";
+
+    // svuota output
+    document.getElementById("outText").innerHTML = "";
+    document.getElementById("outText2").innerHTML = "";
+    document.getElementById("error").innerHTML = "";
+
+    // ripristina colore testo
+    document.getElementById("outText2").style.color = "black";
+
+    // svuota array colori
+    colori = [];
+}
+
